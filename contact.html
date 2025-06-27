@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Elite Mobiles</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .main-nav {
+      background-color: rgba(7, 7, 7, 0.7);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .main-nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-nav a:hover {
+      color: #ffcc00;
+    }
+
+    .contact-bg {
+      background-image: url('https://cellresell.ca/wp-content/uploads/2025/03/mobile-phones.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      padding: 20px;
+    }
+
+    .contact-bg h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .order-form {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 28px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .order-form input,
+    .order-form textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .order-form button {
+      padding: 15px;
+      background-color: #ecebe8;
+      border: none;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Contact Section with Background -->
+  <section class="section contact-bg">
+    <h2>Contact & Queries</h2>
+
+    <form class="order-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      
+      <input type="email" placeholder="Email " required>
+      <input type="text" placeholder="Address" required>
+      <textarea placeholder="Queries" rows="8" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elite Mobiles</p>
+  </footer>
+
+</body>
+</html>

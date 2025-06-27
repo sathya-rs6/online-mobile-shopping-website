@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elite Mobiles</title>
+
+  <!-- Stylish Font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .main-nav {
+      background-color: #111;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .main-nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-nav a:hover {
+      color: #ffcc00;
+    }
+
+    .section.home-bg {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .section.home-bg img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+
+    .logo-text {
+      font-family: "Dancing Script", cursive;
+      font-size: 110px;
+      font-weight: bold;
+      color: rgb(230, 217, 142);
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .welcome-text {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: white;
+    }
+
+    .carousel-inner img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="section home-bg">
+    <img src="https://i02.appmifile.com/mi-com-product/fly-birds/poco-x7/pc/304ec7eb33e2e6993a28840102749628.jpg?f=webp" alt="Elite Mobiles Background">
+    
+    <div class="logo-text">Elite Mobiles</div>
+    
+  </section>
+
+  <!-- Carousel Section -->
+  <div id="mobileCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" class="d-block w-100" alt="iPhone">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/11507984/pexels-photo-11507984.jpeg" class="d-block w-100" alt="OnePlus">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/14710727/pexels-photo-14710727.jpeg" class="d-block w-100" alt="Photography">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elite Mobiles</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
